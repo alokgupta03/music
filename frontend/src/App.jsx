@@ -21,7 +21,7 @@ function App() {
   useEffect(() => {
     const fetchSongs = async () => {
       try {
-        const response = await api.get('/');
+        const response = await api.get('/songs');
         if (Array.isArray(response.data)) {
           setSongs(response.data);
         } else {
