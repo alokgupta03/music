@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: import.meta.env.VITE_BACKEND_URL || 'https://backend-pcxf.onrender.com',
+    baseURL: import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000/songs',
     headers: {
         'Content-Type': 'application/json'
     }

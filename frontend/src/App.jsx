@@ -22,7 +22,12 @@ function App() {
     const fetchSongs = async () => {
       try {
         const response = await api.get('/');
-        setSongs(response.data);
+        if (Array.isArray(response.data)) {
+          setSongs(response.data);
+        } else {
+          console.error('Expected an array but got:', response.data);
+          setSongs([]);
+        }
       } catch (error) {
         console.error('Error fetching songs:', error);
       }
