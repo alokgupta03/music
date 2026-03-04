@@ -17,7 +17,6 @@ export default function HomePage({
     activeTab
 }) {
 
-    // Render empty state
     if (!songs || songs.length === 0) {
         return (
             <div className="hero min-h-[70vh] rounded-box bg-base-100 shadow-xl border border-base-200">
@@ -52,7 +51,6 @@ export default function HomePage({
                     <p className="text-base-content/60 mt-2 text-lg font-medium">{activeTab} Music <span className="text-primary mx-2">•</span> {songs.length} Track{songs.length !== 1 ? 's' : ''}</p>
                 </div>
 
-                {/* Filters and Sorting Controls */}
                 <div className="flex flex-wrap items-center gap-3 w-full md:w-auto">
                     <div className="bg-base-200 p-2 rounded-lg flex items-center gap-2 border border-base-300">
                         <SlidersHorizontal className="size-4 ml-2 text-base-content/50" />

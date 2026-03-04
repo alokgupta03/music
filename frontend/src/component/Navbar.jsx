@@ -42,7 +42,6 @@ export default function Navbar({ activeTab, setActiveTab, searchQuery, setSearch
                 </div>
             )}
 
-            {/* Mobile search bar if on home */}
             {isHome && (
                 <div className="dropdown dropdown-end md:hidden ml-2">
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">

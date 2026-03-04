@@ -44,7 +44,6 @@ export default function MusicCard({ song, onDelete, onToggleFavorite }) {
                     </Link>
                 </div>
 
-                {/* Favorite Quick Action Toggle */}
                 <button
                     onClick={handleFavorite}
                     className="absolute top-4 right-4 btn btn-circle btn-sm btn-ghost hover:bg-base-200/50 transition-colors z-10 bg-base-100/30 backdrop-blur-md"
